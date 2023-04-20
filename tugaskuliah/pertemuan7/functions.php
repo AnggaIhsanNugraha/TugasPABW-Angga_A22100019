@@ -35,7 +35,7 @@ function tambah($data)
   $query = "INSERT INTO
               mahasiswa
             VALUES
-            (null, '$nama', '$nim, '$kelas', '$gambar');
+            ('$nama', '$nim', '$kelas', '$gambar');
           ";
   mysqli_query($conn, $query);
   echo mysqli_error($conn);
